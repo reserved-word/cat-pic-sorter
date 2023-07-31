@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pic Sorter</title>
+    <script src="jszip.min.js" defer></script>
+    <script src="sorter.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header><button>Back</button><button>Back</button><div id="stats">Stats</div></header>
+    <main>
+        <div id="file-drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" onclick="document.querySelector('#file-drop-zone-input').click()">
+            <input type="file" id="file-drop-zone-input" multiple accept="image/*" onchange="inputUploaderHandler(this.files)" style="display: none;">
+            <div id="file-drop-zone-text">Drop some pics here 🐱</div>
+            <div id="uploaded-pics"></div>
+        </div>
+        <div id="decision">
+            <img id="left-pic" src="" onclick="leftPicClickHandler()">
+            <img id="right-pic" src="" onclick="rightPicClickHandler()">
+        </div>
+        <div id="export-selector"></div>
+    </main>
+</body>
