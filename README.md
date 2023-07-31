@@ -3,3 +3,5 @@ A script that allows you to sort and find the best pics among several by **pairw
 Don't drop too many pics at once. The script does about `log2(n!)` comparisons!
 
 The code is a bit messy, it was written by my cat 🐱
+
+[Have a good comparison!](https://reserved-word.github.io/cat-pic-sorter/)
